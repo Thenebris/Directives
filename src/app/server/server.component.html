@@ -1,0 +1,13 @@
+<button (click)="setStatus()" class="btn btn-primary">Display Details</button>
+
+<p *ngIf="textDisplayed">Secret Password = tuna</p>
+
+<div *ngFor="let arrayItem of myArray"
+    [ngStyle]="{backgroundColor: arrayItem >= 5 ? 'blue' : 'transparent' }"
+>{{arrayItem}}</div>
+
+
+
+
+
+<span *ngFor="let arrayItem of myArray">{{arrayItem + " "}}</span>
